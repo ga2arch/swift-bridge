@@ -28,6 +28,7 @@ impl SharedEnumAllAttributes {
                     for arg in args.into_iter() {
                         match arg.get_ident().unwrap().to_string().as_str() {
                             "Debug" => attributes.derive.debug = true,
+                            "Error" => attributes.derive.error = true,
                             _ => todo!("Unsupported derive macro; please see https://github.com/chinedufn/swift-bridge/issues/190#issuecomment-1463234027"),
                         }
                     }

@@ -316,6 +316,7 @@ fn gen_package(output_dir: &Path, config: &CreatePackageConfig) {
 import PackageDescription
 let package = Package(
 	name: "{package_name}",
+    platforms: [.iOS(.v13)],
 	products: [
 		.library(
 			name: "{package_name}",

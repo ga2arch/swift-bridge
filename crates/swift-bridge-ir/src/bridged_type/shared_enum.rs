@@ -12,6 +12,7 @@ use super::StructFields;
 #[derive(Default, Clone)]
 pub(crate) struct DeriveAttrs {
     pub debug: bool,
+    pub error: bool,
 }
 
 #[derive(Clone)]
